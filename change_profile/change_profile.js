@@ -1,3 +1,5 @@
+/* https://github.com/CO2tanso/roll20api_tanso/tree/main/change_profile */
+
 const setting = {
     // 캐릭터 시트의 특정 영역을 사용한다면 true로 바꿔주세요.
     use_sheet: false,
