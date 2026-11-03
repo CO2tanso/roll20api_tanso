@@ -9,7 +9,7 @@
 <h3>표정 세팅</h3>
 등록하려는 표정 이미지를 하나씩 저널 아바타에 넣고 차례로 이미지 주소를 복사합니다. (하단 이미지 참고)
 
-<img width="600" height="385" alt="image" src="https://github.com/user-attachments/assets/7a881f3f-d810-45b4-9f09-a515c468ebf5" />
+<br><img width="600" height="385" alt="image" src="https://github.com/user-attachments/assets/7a881f3f-d810-45b4-9f09-a515c468ebf5" />
 
 <br><br>그대로 저널 편집 스크롤을 내리면 **개요 및 정보**란이 있습니다.
 <br>하나씩 `표정명(이미지링크)` 형식으로 한줄씩 넣고 저장하면 세팅이 완료됩니다.<br>
