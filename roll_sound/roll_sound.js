@@ -1,3 +1,5 @@
+/*https://github.com/CO2tanso/roll20api_tanso/tree/main/roll_sound*/
+
 const rollsound_setting = {
     //GM및 PL(PC) 모두가 같은 효과음이라면 true로 설정해 주세요. (효과음의 주크박스 이름 설정은 dice)
     gmpl_sep: false,
@@ -41,14 +43,19 @@ on("chat:message", function(msg) {
             
         }
         
-        tracks = findObjs({
-            _type: "jukeboxtrack",
-            title: trackTitle
-        });
+        try {
+            tracks = findObjs({
+                _type: "jukeboxtrack",
+                title: trackTitle
+            });
         
-        var track = tracks[0];
+            var track = tracks[0];
         
-        track.set("playing", true);
-        track.set("softstop", false);
+            track.set("playing", true);
+            track.set("softstop", false);
+        }
+        catch (err) {
+            sendChat('roll_sound','/w GM 주크박스 효과음 이름 혹은 코드 내 변수 설정이 잘못되었습니다.');
+        }
     }
 });
