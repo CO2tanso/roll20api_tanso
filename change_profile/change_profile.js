@@ -1,6 +1,6 @@
 /* https://github.com/CO2tanso/roll20api_tanso/tree/main/change_profile */
 
-const setting = {
+const change_prf_setting = {
     // 캐릭터 시트의 특정 영역을 사용한다면 true로 바꿔주세요.
     use_sheet: false,
     // 시트 사용을 true로 한 경우, 사용할 태그의 name을 적어주세요.
@@ -24,8 +24,8 @@ on("chat:message", function(msg) {
                 let pf = pfname[1];
                 
                 
-                if (setting.use_sheet) {
-                    let bio = findObjs({_type: "attribute", _characterid: character.id, name: setting.tag_name})[0].get("current");
+                if (change_prf_setting.use_sheet) {
+                    let bio = findObjs({_type: "attribute", _characterid: character.id, name: change_prf_setting.tag_name})[0].get("current");
                     
                     const regex = new RegExp(`${pf}\\(([^)]+)\\)`);
                     let searchLink = bio.match(regex);
